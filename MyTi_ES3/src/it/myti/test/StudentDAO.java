@@ -1,5 +1,10 @@
 package it.myti.test;
 
+/**
+ * Classe mock che simula un DAO
+ * @author Francesco Palberti
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,10 +24,18 @@ public class StudentDAO {
 		return instance;
 	}
 	
+	/**
+	 * 
+	 * @return lista degli studenti
+	 */
 	public List<Student> listAll(){
 		return new ArrayList<Student>(data);
 	}
 	
+	/**
+	 * 
+	 * @return l'indice dello studente inserito
+	 */
 	public int addStudent(Student aStudent){
 		int newId = data.size() + 1;
         data.add(aStudent); 

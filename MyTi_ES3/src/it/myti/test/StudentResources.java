@@ -1,5 +1,10 @@
 package it.myti.test;
 
+/**
+ * Classe che rappresenta il WebService.
+ * @author Francesco Palberti
+ */
+
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
